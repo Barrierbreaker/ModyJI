@@ -1,0 +1,24 @@
+@import "normalize";
+@import "header";
+@import "main";
+@import "footer";
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: ProximaNova;
+    /* имя шрифта для CSS правил */
+    src: url(../fonts/ProximaNova/ProximaNovaBold.otf);
+    /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}
+@font-face {
+    font-family: ProximaNoval;
+    /* имя шрифта для CSS правил */
+    src: url(../fonts/ProximaNova/ProximaNova-Semibold.ttf);
+    /* если шрифт не установлен, тогда загружаем его по указанному пути */
+}

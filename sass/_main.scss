@@ -1,0 +1,281 @@
+        middle {
+            background-image: url(../img/workbg.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            .middle-bmenu {
+                &__line1 {
+                    margin-top: 2%;
+                    margin-left: 4%;
+                    img {
+                        margin: 0 auto;
+                        width: 70%;
+                        height: 350px;
+                    }
+                    width: 1000px;
+                }
+            }
+        }
+        
+        .read {
+            margin-top: 1%;
+            margin-left: 42%;
+            background: none;
+            border: 2px solid white;
+            color: white;
+            width: 200px;
+            height: 40px;
+        }
+        
+        .wrapl {
+            .pict1 {
+                padding-top: 4%;
+                display: block;
+                margin: 0 auto;
+                align-content: center;
+            }
+            h2 {
+                text-align: center;
+                align-content: center;
+                color: white;
+            }
+            background-image: url(../img/workbg.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+        }
+        
+        .flex-container {
+            display: flex;
+            flex-flow: column nowrap;
+            /* shorthand for flex-direction and flex-wrap */
+            align-content: center;
+            height: auto;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            overflow: auto;
+        }
+        
+        .flex-item {
+            flex: 0 0 auto;
+            /* shorthand for flex-grow flex-shrink flex-basis */
+            width: 100%;
+        }
+        
+        @media screen and (min-width: 500px) {
+            .flex-container {
+                flex-flow: column wrap;
+                /* trigger columnns */
+                height: 800px;
+            }
+            .flex-item {
+                width: 50%;
+                /* 2 col */
+            }
+        }
+        
+        @media screen and (min-width: 500px) {
+            .flex-container {
+                margin: 0 auto;
+                height: 800px;
+                width: 1000px;
+            }
+            .flex-item {
+                width: 33.333%;
+                /* 3 col */
+            }
+        }
+        
+        [class*='box-'] {
+            background: none;
+            color: black;
+        }
+        
+        .box-1,
+        .box-2,
+        .box-4,
+        .box-8 {
+            height: 400px;
+            /* The magic */
+        }
+        
+        .box-5 {
+            height: 800px;
+            /* the magic */
+        }
+        
+        .clorem {
+            background-color: rgb(219, 219, 219);
+        }
+        
+        .flex-item {
+            h2 {
+                font-family: "PTSans";
+                font-size: 24px;
+                font-weight: 700;
+            }
+            p {
+                margin: 0 auto;
+                /* Style for "Cras matti" */
+                width: 193px;
+                height: 39px;
+                color: #665f60;
+                font-family: "PTSans";
+                font-style: italic;
+            }
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            img {
+                margin: 0 auto;
+                margin-top: 30%;
+            }
+        }
+        
+        .tut {
+            color: white;
+        }
+        
+        .tuti {
+            font-style: normal;
+            font-weight: 600;
+        }
+        
+        .box-5 {
+            color: white;
+            h2 {
+                font-size: 36px;
+            }
+            p {
+                /* Style for "“Nullam qu" */
+                width: 315px;
+                height: 59px;
+                font-weight: 700;
+                font-family: "PTSans";
+                font-size: 15px;
+                font-weight: 700;
+                color: white;
+            }
+            background-image: url(../img/service.png);
+            background-size: cover;
+        }
+        
+        body>premid>div>section>div.flex-item.box-5.tut>p:nth-child(3) {
+            margin-top: 45%;
+        }
+        
+        body>premid>div>section>div.flex-item.box-5.tut>p:nth-child(4) {
+            margin-top: -5%;
+        }
+        
+        body>middle>div>img {
+            margin-left: 49%;
+            margin-top: 2%;
+        }
+        
+        .bottonline {
+            background-color: #9f9acf;
+            width: 350px;
+            height: 70px;
+            ul {
+                padding-top: 5%;
+                margin-left: -40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                li {
+                    margin: 0 2%;
+                }
+            }
+        }
+        
+        .kvadrat:hover {
+            animation: kvadrat 2s 1s infinite ease-in-out;
+        }
+        
+        @keyframes kvadrat {
+            50% {
+                background-color: red;
+                transform: perspective(300px) rotateX(-180deg)
+            }
+            100% {
+                background-color: blue;
+                transform: perspective(300px) rotateY(-179.9deg);
+            }
+        }
+        
+        .sl1_slide:hover {
+            transform: scale(1.1);
+        }
+        
+        .kvadrokrug:hover {
+            animation: kvadrokrug 3s 2s infinite alternate;
+            background-color: green;
+        }
+        
+        @keyframes kvadrokrug {
+            25% {
+                transform: rotate(45deg);
+                border-radius: 50px 0px 0px 0px;
+                background-color: red;
+            }
+            50% {
+                transform: rotate(90deg);
+                background-color: yellow;
+                border-radius: 50px 50px 0px 0px;
+            }
+            75% {
+                transform: rotate(135deg);
+                background-color: black;
+                border-radius: 150px 150px 150px 0px;
+            }
+            100% {
+                transform: rotate(180deg);
+                background-color: yellow;
+                border-radius: 150px 150px 150px 150px;
+            }
+        }
+        
+        .flex-item:hover {
+            border: 1px solid red;
+            background: aquamarine;
+        }
+        
+        #ex4>div>div>div>div>div.sl2.slick-initialized.slick-slider>div>div>div>img {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .sl2 {
+            margin-top: -3%;
+        }
+        
+        @media screen and (min-width:1400px) {
+            middle {
+                .middle-bmenu {
+                    &__line1 {
+                        margin: 0;
+                        margin-left: -9%;
+                        width: 1400px;
+                        img {
+                            height: 600px;
+                            width: 1400px;
+                        }
+                    }
+                }
+            }
+            .sl2 {
+                margin-top: -2%;
+            }
+            #ex4>div>div>div>div>div.sl2.slick-initialized.slick-slider>div>div>div>img {
+                width: 150px;
+                height: 70px;
+            }
+        }
+        
+        #ex4>div>div>div>div>div.sl2.slick-initialized.slick-slider>div>div {
+            display: none;
+        }

@@ -1,0 +1,244 @@
+.wra {
+    background-color: #ebebeb;
+    h2 {
+        margin-bottom: 4%;
+        text-align: center;
+    }
+}
+
+body>prefooter>div>img,
+#ex3>div>img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+footer {
+    position: relative;
+}
+
+.zapolnen {
+    z-index: 300;
+    background-color: #9f9acf;
+    height: 900px;
+    position: absolute;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+#panel {
+    form {
+        .droimg {
+            display: flex;
+            margin: 0 auto;
+            align-content: center;
+        }
+        .dropmessag {
+            color: #ffffff;
+            font-family: "ProximaNova";
+            font-size: 36px;
+            font-weight: 200;
+            text-align: center;
+            margin-bottom: 35%;
+        }
+        .sendb {
+            margin: 0 auto;
+            border: none;
+            color: white;
+            background-color: #9f9acf;
+            width: 293px;
+            height: 70px;
+            margin-left: 35%;
+            border-radius: 5px;
+        }
+        width: 900px;
+        #start,
+        #start1 {
+            border-radius: 5px;
+            border: none;
+            background-color: #ebebeb;
+            color: white;
+            width: 414px;
+            height: 56px;
+        }
+        #start1 {
+            margin-left: 3%;
+        }
+        .start {
+            margin-top: 3%;
+            border-radius: 5px;
+            border: none;
+            background-color: #ebebeb;
+            color: white;
+            width: 860px;
+            height: 200px;
+            margin-bottom: 3%;
+        }
+    }
+    position: absolute;
+    opacity: 0.5;
+    top: 5%;
+    left: 15%;
+    z-index: 5;
+    color: green;
+    z-index: 300;
+}
+
+#panel:hover {
+    opacity: 1;
+}
+
+#map-canvas {
+    z-index: 200;
+    height: 900px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Gafata', sans-serif;
+    font-weight: bold;
+}
+
+.social-voit {
+    margin-top: 40px;
+    &__item1 {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    &__item2 {
+        /* Style for "Copyright" */
+        margin: 0 auto;
+        text-align: center;
+        width: 250px;
+        color: #81868e;
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 2%;
+    }
+    &__item3 {
+        align-content: center;
+        text-align: center;
+        padding-bottom: 77px;
+    }
+}
+
+.weal {
+    background-color: #9f9acf;
+    height: 150px;
+    color: white;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+
+/*Стилизация кнопки ВВЕРХ */
+
+.scrollup {
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    z-index: 500;
+    display: none;
+    text-indent: -9999px;
+    background: url(../new/arrowtop.png) no-repeat;
+}
+
+.wrap33 {
+    position: relative;
+    z-index: 500;
+}
+
+.slideout1,
+.slideout {
+    position: absolute;
+    top: 172px;
+    right: 0px;
+    width: 91px;
+    height: 91px;
+    vertical-align: middle;
+    text-align: center;
+    background: #9f9acf;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.slideout1_inner1,
+.slideout_inner {
+    z-index: 500;
+    position: absolute;
+    top: 0px;
+    right: -250px;
+    background: #d9d7e2;
+    width: 250px;
+    padding: 0 25px;
+    height: 91px;
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    text-align: left;
+}
+
+.slideout:hover {
+    right: 250px;
+}
+
+.slideout:hover .slideout_inner {
+    right: -250px;
+}
+
+.slideout1 {
+    position: absolute;
+    top: 263px;
+}
+
+.slideout1_inner1 {
+    position: absolute;
+    top: 0px;
+    right: -250px;
+}
+
+.slideout1:hover {
+    right: 250px;
+}
+
+.slideout1:hover .slideout1_inner1 {
+    right: -250px;
+}
+
+.lab {
+    width: 176px;
+    height: 57px;
+    color: #665f60;
+    font-family: "PTSans";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.socccial {
+    margin-top: 25px;
+}
+
+@media screen and (min-width:1400px) {
+    #panel {
+        margin-left: 8%;
+    }
+}
